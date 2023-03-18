@@ -1,0 +1,358 @@
+/* page setup codes */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Header section designs */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+/* Align top header logo and menu button */
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #752092;
+}
+
+/* Logo designs */
+.logo a{
+    text-decoration: none;
+    font-family: 'Leckerli One', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+/* Hamburger menu designs */
+#hamburgerMenuButton{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hamburger aside designs */
+.hamburger-aside{
+    text-align: center;
+    background-color: #FFE3B3;
+    padding: 10px;
+    height: max-content;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition:  all 0.6s;
+}
+.hamburger-aside.active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Navigation menu desings */
+.nav-menu li{
+    margin: 30px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+}
+.nav-menu li:hover{
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Search box designs */
+.search{
+    border-bottom: 1px solid black;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.search input{
+    width: 90%;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.search input::placeholder{
+    font-weight: lighter;
+}
+#searchNews{
+   cursor: pointer;
+}
+
+/* Date and Day designs */
+.date{
+    margin-top: 90px;
+}
+.date-and-day{
+    font-weight: bold;
+}
+
+
+/* Main section designs */
+main{
+    margin-top: 80px;
+}
+.latest-heading{
+    padding: 20px 0px 30px 10px;
+    font-size: 35px;
+}
+
+/* latest news designs */
+.all-latest-news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.news{
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px black;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.5px 0.5px 1px black;
+    margin: 30px 20px;
+}
+.news:hover{
+    color: rgb(197, 193, 193);
+}
+.news-heading{
+    padding: 10px 20px;
+    background-color: rgba(128, 128, 128, 0.473);
+}
+
+
+
+/* About section designs */
+#about{
+    background-color: #a11a92;
+    padding: 20px;
+    color: white;
+}
+#about h1{
+    padding-bottom: 10px;
+    text-align: center;
+}
+#about hr{
+    border: none;
+    border-bottom: 2px solid white;
+}
+.about-us-desc{
+    padding: 10px 0px 20px 0px;
+    line-height: 28px;
+    font-size: 18px;
+}
+#about a{
+    color: white;
+}
+.company-name{
+    font-family: 'Leckerli One', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Contact section designs */
+#contact{
+    padding-top: 40px;
+}
+#contact form{
+    width: 90%;
+    margin: 0 auto;
+}
+#contact form> div{
+    margin: 40px 0px;
+}
+#contact form input{
+    margin-left: 20px;
+    width: 80%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 16px;
+    margin: 20px;
+}
+#contact label{
+    font-weight:bold;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+}
+#contact form input::placeholder{
+    font-size: 14px;
+}
+#contact h1{
+    padding-bottom: 0px;
+    text-align: center;
+}
+#contact hr{
+    padding-bottom: 10px;
+    border: none;
+    border-bottom:  2px solid black;
+    width: 40%;
+    margin: 0 auto;
+}
+#contact textarea{
+    width: 80%;
+    height: 300px;
+    resize: none;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+.submit-button{
+    text-align: center;
+}
+#submitButton{
+    width: 120px;
+    height: 40px;
+    background-color: rgb(3, 202, 3);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 2px 6px black;
+    cursor: pointer;
+    color: white;
+}
+#submitButton:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    box-shadow: 4px 3px 8px black;
+}
+.message{
+    text-align: center;
+}
+
+/* footer section designs */
+footer{
+    text-align: center;
+    background-color: rgb(7, 7, 62);
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* For desktop */
+@media only screen and (min-width: 992px) {
+
+    /* Header element designs */
+    header{
+        background-color: #752092;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+    }
+
+    /* Hide hamburger menu on desktop screen */
+    #hamburgerMenuButton{
+        display: none;
+    }
+
+    /* Header main section alignments */
+    .header-main{
+        display: flex;
+        padding: 0px;
+        background-color: transparent;
+    }
+
+    /* Header aside section alignments */
+    .hamburger-aside{
+        background-color: transparent;
+        padding: 0px;
+        height: max-content;
+        z-index: 1;
+        position: relative;
+        width: 80%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    .hamburger-aside.active{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Navigation menu alignments */
+    .nav-menu li {
+        margin: 0px 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+        display: inline;
+    }
+    .nav-menu li a{
+        color: white;
+    }
+
+    /* Search box designs */
+    .search{
+        border-bottom: 1px solid white;
+        text-align: left;
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        color: white;
+    }
+    .search input{
+        width: 90%;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        font-weight: bold;
+        margin-top: 0px;
+        color: white;
+    }
+
+    /* Date and Day designs */
+    .date{
+        margin-top: 0px;
+    }
+    .date-and-day{
+        font-weight: bold;
+    }
+
+    /* About section designs */
+.about-us-desc{
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* Contact section designs */
+#contact form{
+    width: 60%;
+    margin: 0 auto;
+}
+   
+    
+}

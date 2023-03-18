@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Letter</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header section starts -->
+        <header>
+             
+            <!-- Header main starts -->
+            <div class="header-main">
+                   <!-- logo -->
+                <div class="logo">
+                    <a href="#" title="Quick Letter">Quick Letter</a>
+                </div>
+
+                <!-- Hamburger menu -->
+                <div class="hamburger-menu">
+                    <button title="Menu" id="hamburgerMenuButton"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <!-- Header main ends -->
+
+            <!-- Header aside starts -->
+            <div class="hamburger-aside active">
+                    <!-- Navigation menus -->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a class="nav-btn" href="#">Home</a></li>
+                        <li><a class="nav-btn" href="#latest">Latest</a></li>
+                        <li><a class="nav-btn" href="#about">About us</a></li>
+                        <li><a class="nav-btn" href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
+                        <!-- Search bar -->
+                <div class="search">
+                    <input type="search" placeholder="Search..." name="searchField" id="searchField"> <span id="searchNews"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                         <!-- Date and Day-->
+                <div class="date">
+                    <p class="date-and-day"></p>
+                </div>
+            </div>
+            <!-- Heade aside ends -->
+        </header>
+    <!-- Header section ends -->
+
+
+    
+    
+
+    <!-- Main section starts -->
+    <main>
+
+        <!-- Latest news section starts -->
+        <section id="latest">
+            <h1 class="latest-heading">Latest News</h1>
+
+
+                <!-- Latest news starts -->
+            <div class="all-latest-news"></div>
+                <!-- Latest news ends -->
+
+        </section>
+        <!-- Latest news section ends -->
+
+
+        <!-- About section starts -->
+            <section id="about">
+                <h1 class="latest-heading">About us</h1><hr>
+                <p class="about-us-desc">
+                    <span class="company-name">"Quick Letter"</span> is a free short news portal where you can find all sorts of interesting news sneak peek. You can read your desired news just simply by click over. Quick letter mainly present technology related news as the developer of "Quick Letter" loves technology. However, you can find your news of choice just by searching the news topic. "Quick Letter" provied news from over 80000 websites. This site is developed by <a target="_blank" href="https://www.facebook.com/Shihab.Hasan001">Shihab Hasan</a> and powered by <a  target="_blank" href="https://newsapi.org/">NewsAPI</a>.
+                </p>
+            </section>
+        <!-- About section ends -->
+
+
+
+
+        <!-- Contact section starts -->
+            <section id="contact">  
+                <h1 class="latest-heading">Contact us</h1> <hr>
+                <form action="https://formsubmit.co/3ad284f4e1ef378974c324c02ff1fb1c" method="POST">
+                   <div class="name">
+                        <label for="name">Your Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Your name.."> <br>
+                   </div>
+                   <div class="email">
+                    <label for="email">Your Email: </label>
+                        <input type="email" name="email" placeholder="example@gmail.com"><br>
+                   </div>
+                    <div class="message">
+                        <label for="message">Let us know what you think: </label><br>
+                        <textarea name="message" placeholder="Start Writing..."></textarea> <br>
+                    </div>
+                    <div class="submit-button">
+                        <button id="submitButton" type="submit">Send</button>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </section>
+        <!-- Contact section ends -->
+
+
+    </main>
+    <!-- Main section ends -->
+
+
+
+    <!-- footer section starts -->
+        <footer>
+            Copyright &copy; 2023, Quick letter.
+        </footer>
+    <!-- footer section ends -->
+
+
+
+
+
+    
+
+    <script src="../Scripts/index.js"></script>
+</body>
+</html>
